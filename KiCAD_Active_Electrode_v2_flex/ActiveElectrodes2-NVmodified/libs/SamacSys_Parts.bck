@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP AD8606ACBZ-REEL7
+D Analog Devices AD8606ACBZ-REEL7, Dual Low Noise Op Amp, 10MHz CMOS, Rail to Rail, 2.7  5.5 V, 8-Pin WLCSP
+K
+F https://componentsearchengine.com/Datasheets/1/AD8606ACBZ-REEL7.pdf
+$ENDCMP
+#
+$CMP AD5933YRSZ-REEL7
+D Data Acquisition ADCs/DACs - Specialized IC 12bit 1 MSPS Impedance Cnvtr
+K
+F https://componentsearchengine.com/Datasheets/1/AD5933YRSZ-REEL7.pdf
+$ENDCMP
+#
+$CMP DSC6001CI2A-016.0000T
+D Standard Clock Oscillators MEMS Oscillator, Ultra Low Power, LVCMOS, -40C-85C, 25ppm, 3.2x2.5mm
+K
+F https://componentsearchengine.com/Datasheets/1/DSC6001CI2A-016.0000T.pdf
+$ENDCMP
+#
+#End Doc Library
