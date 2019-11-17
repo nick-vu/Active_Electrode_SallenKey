@@ -375,7 +375,7 @@ Text GLabel 4250 3300 3    50   Input ~ 0
 Wire Wire Line
 	4250 3100 4250 3300
 Text Notes 3150 3300 0    50   ~ 0
-Butterworth, 4th order\n1/2pi*sqrt(R1R2C1C2) \n= 1.44 Hz
+Butterworth, 2nd order \n1/2pi*sqrt(R1R2C1C2) \n= 1.44 Hz HPF
 Wire Wire Line
 	4250 2700 4500 2700
 Wire Wire Line
@@ -493,9 +493,93 @@ Wire Notes Line
 	2850 3900 2850 3200
 Wire Notes Line
 	2850 3200 600  3200
-NoConn ~ 1000 3650
-NoConn ~ 2450 3450
-NoConn ~ 2450 3750
-Text GLabel 5550 1100 0    50   Input ~ 0
+Text GLabel 3450 4200 0    50   Input ~ 0
 2nd_Out
+$Comp
+L Device:R R8
+U 1 1 5DD0D373
+P 3950 4200
+F 0 "R8" V 3850 4200 50  0000 C CNN
+F 1 "20k" V 3950 4200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 3880 4200 50  0001 C CNN
+F 3 "~" H 3950 4200 50  0001 C CNN
+	1    3950 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 4200 3800 4200
+Wire Wire Line
+	4100 4200 4250 4200
+$Comp
+L Device:C C7
+U 1 1 5DD125A2
+P 4250 4500
+F 0 "C7" H 4250 4600 50  0000 L CNN
+F 1 "0.1uF" H 4250 4400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4288 4350 50  0001 C CNN
+F 3 "~" H 4250 4500 50  0001 C CNN
+	1    4250 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 4200 4250 4350
+$Comp
+L Device:R R9
+U 1 1 5DD16742
+P 4700 4200
+F 0 "R9" V 4600 4200 50  0000 C CNN
+F 1 "20k" V 4700 4200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 4630 4200 50  0001 C CNN
+F 3 "~" H 4700 4200 50  0001 C CNN
+	1    4700 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 4200 4550 4200
+Connection ~ 4250 4200
+Wire Wire Line
+	4850 4200 5100 4200
+$Comp
+L power:GND #PWR0107
+U 1 1 5DD19357
+P 5100 4700
+F 0 "#PWR0107" H 5100 4450 50  0001 C CNN
+F 1 "GND" H 5105 4527 50  0000 C CNN
+F 2 "" H 5100 4700 50  0001 C CNN
+F 3 "" H 5100 4700 50  0001 C CNN
+	1    5100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5DD1A959
+P 5100 4550
+F 0 "C8" H 5100 4650 50  0000 L CNN
+F 1 "0.1uF" H 5100 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5138 4400 50  0001 C CNN
+F 3 "~" H 5100 4550 50  0001 C CNN
+	1    5100 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 4200 5100 4400
+Wire Wire Line
+	4250 4650 4250 4700
+Text GLabel 4250 4700 3    50   Input ~ 0
+4th_Out
+Text Notes 3200 4750 0    50   ~ 0
+Butterworth, 2nd order\n1/2pi*sqrt(R1R2C1C2) \n= 79.5Hz LPF
+Wire Wire Line
+	5100 4200 5300 4200
+Connection ~ 5100 4200
+Text GLabel 5300 4200 2    50   Input ~ 0
+4th+
+Text GLabel 2450 3750 2    50   Input ~ 0
+4th+
+Text GLabel 2450 3450 2    50   Input ~ 0
+4th_Out
+Text GLabel 1000 3650 0    50   Input ~ 0
+4th_Out
+Text GLabel 5550 1100 0    50   Input ~ 0
+4th_Out
 $EndSCHEMATC
