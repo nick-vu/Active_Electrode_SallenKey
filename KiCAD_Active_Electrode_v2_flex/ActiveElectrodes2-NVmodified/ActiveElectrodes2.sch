@@ -32,7 +32,7 @@ F 8 "AD8606ACBZ-REEL7" H 3400 900 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 Wire Wire Line
 	3550 1800 3950 1800
-Text GLabel 3950 1800 2    50   Input ~ 0
+Text GLabel 3600 2700 0    50   Input ~ 0
 Electrode_in
 Text GLabel 3950 1700 2    50   Input ~ 0
 VSS
@@ -407,7 +407,7 @@ F 3 "~" H 3900 2700 50  0001 C CNN
 	1    3900 2700
 	0    1    1    0   
 $EndComp
-Text GLabel 3600 2700 0    50   Input ~ 0
+Text GLabel 3450 4200 0    50   Input ~ 0
 amplifier_out
 $Comp
 L Device:C C6
@@ -493,8 +493,6 @@ Wire Notes Line
 	2850 3900 2850 3200
 Wire Notes Line
 	2850 3200 600  3200
-Text GLabel 3450 4200 0    50   Input ~ 0
-2nd_Out
 $Comp
 L Device:R R8
 U 1 1 5DD0D373
@@ -582,4 +580,6 @@ Text GLabel 1000 3650 0    50   Input ~ 0
 4th_Out
 Text GLabel 5550 1100 0    50   Input ~ 0
 4th_Out
+Text GLabel 3950 1800 2    50   Input ~ 0
+2nd_Out
 $EndSCHEMATC

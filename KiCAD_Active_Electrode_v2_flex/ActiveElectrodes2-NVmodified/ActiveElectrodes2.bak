@@ -493,8 +493,6 @@ Wire Notes Line
 	2850 3900 2850 3200
 Wire Notes Line
 	2850 3200 600  3200
-Text GLabel 5550 1100 0    50   Input ~ 0
-2nd_Out
 Text GLabel 3450 4200 0    50   Input ~ 0
 2nd_Out
 $Comp
@@ -581,5 +579,7 @@ Text GLabel 2450 3750 2    50   Input ~ 0
 Text GLabel 2450 3450 2    50   Input ~ 0
 4th_Out
 Text GLabel 1000 3650 0    50   Input ~ 0
+4th_Out
+Text GLabel 5550 1100 0    50   Input ~ 0
 4th_Out
 $EndSCHEMATC
