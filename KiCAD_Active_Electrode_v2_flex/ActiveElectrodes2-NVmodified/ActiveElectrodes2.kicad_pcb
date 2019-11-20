@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
@@ -133,7 +133,7 @@
     (add_net amplifier_out)
   )
 
-  (module SamacSys_Parts:BGA8C50P3X3_143X177X675 (layer F.Cu) (tedit 5DD5ADF7) (tstamp 5DCDA3F2)
+  (module SamacSys_Parts:BGA8C50P3X3_143X177X675 (layer F.Cu) (tedit 5DD5AE9E) (tstamp 5DCDA3F2)
     (at 49.76 26.36 90)
     (descr BGA8C50P3X3_143X177X675)
     (tags "Integrated Circuit")
@@ -142,8 +142,8 @@
     (fp_text reference IC2 (at 0.04 0.21 180) (layer F.SilkS)
       (effects (font (size 0.4 0.4) (thickness 0.1)))
     )
-    (fp_text value AD8606ACBZ (at -3.4544 -3.81 90) (layer F.SilkS) hide
-      (effects (font (size 1.27 1.27) (thickness 0.254)))
+    (fp_text value "" (at 2.57 5.36 90) (layer F.SilkS) hide
+      (effects (font (size 0.5 0.5) (thickness 0.1)))
     )
     (fp_circle (center -0.52 -0.52) (end -0.35 -0.53) (layer F.SilkS) (width 0.15))
     (fp_line (start 0.73 -0.905) (end 0.73 0.92) (layer F.SilkS) (width 0.1))
@@ -872,7 +872,7 @@
     )
   )
 
-  (gr_text "preamp design\nyeolab\n8.19.19" (at 49.68 26.31) (layer B.SilkS) (tstamp 5DCDA5A6)
+  (gr_text "preamp design\nyeolab\n11.20.19" (at 49.68 26.31) (layer B.SilkS) (tstamp 5DCDA5A6)
     (effects (font (size 0.5 0.5) (thickness 0.1)) (justify mirror))
   )
   (gr_circle (center 49.645868 29.52) (end 55.43 29.4) (layer Edge.Cuts) (width 0.05) (tstamp 5DD0C866))
